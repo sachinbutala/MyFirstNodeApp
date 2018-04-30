@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -12,6 +12,14 @@
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
     "mongodb": "^3.0.7",
-    "morgan": "~1.9.0"
+    "morgan": "~1.9.0",
+    "nodemon": "^1.17.3"
+  },
+  "nodemonConfig":{
+  "env":{
+	"URL":"mongodb://firstmongodb.documents.azure.com:10255/?ssl=true&replicaSet=globaldb",
+	"USER":"firstmongodb",
+	"PASSWORD":"ECaQBWcWyamxZD5jrrPXNQf5cam3yBdPgqEm0FN5kpTrP7zjK8TI6bKlFqzPCltgng9dzMLw9v0Euo0QMqgXnA=="
+  }
   }
 }
